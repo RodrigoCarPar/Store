@@ -12,6 +12,7 @@ public class Login extends javax.swing.JFrame {
         this.setTitle("Inicio de sesión");
         this.setResizable(false);
         txtSalida.setVisible(false);
+        etUsuario.setEchoChar((char)0);
     }
 
     /**
