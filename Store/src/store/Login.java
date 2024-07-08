@@ -29,6 +29,7 @@ public class Login extends javax.swing.JFrame {
         txtSalida = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         etUsuario = new javax.swing.JPasswordField();
+        userimg = new javax.swing.JLabel();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -80,8 +81,12 @@ public class Login extends javax.swing.JFrame {
         });
         getContentPane().add(etUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 322, 330, 40));
 
+        userimg.setForeground(new java.awt.Color(0, 51, 204));
+        userimg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/store/imagenes/user.png"))); // NOI18N
+        getContentPane().add(userimg, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, -1, -1));
+
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/store/imagenes/login.png"))); // NOI18N
-        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 804, 501));
+        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 804, 501));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -173,5 +178,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel txtSalida;
     private javax.swing.JLabel txtUsuario;
+    private javax.swing.JLabel userimg;
     // End of variables declaration//GEN-END:variables
 }

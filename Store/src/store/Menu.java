@@ -24,10 +24,10 @@ public class Menu extends javax.swing.JFrame {
         ivProducto2 = new javax.swing.JLabel();
         ivProducto3 = new javax.swing.JLabel();
         ivProducto4 = new javax.swing.JLabel();
-        tAceiteVegetal = new javax.swing.JLabel();
-        tLeche = new javax.swing.JLabel();
-        tAtun = new javax.swing.JLabel();
-        tCola = new javax.swing.JLabel();
+        cMike = new javax.swing.JLabel();
+        pOdidoss = new javax.swing.JLabel();
+        zCas = new javax.swing.JLabel();
+        mHabanic = new javax.swing.JLabel();
         precio1 = new javax.swing.JLabel();
         precio2 = new javax.swing.JLabel();
         precio3 = new javax.swing.JLabel();
@@ -62,37 +62,37 @@ public class Menu extends javax.swing.JFrame {
         TIENDA.setToolTipText("");
         getContentPane().add(TIENDA, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, -1, -1));
 
-        ivProducto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/store/imagenes/aceite.jpg"))); // NOI18N
+        ivProducto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/store/imagenes/Mike.jpg"))); // NOI18N
         getContentPane().add(ivProducto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 92, 170, 170));
 
-        ivProducto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/store/imagenes/leche.jpg"))); // NOI18N
+        ivProducto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/store/imagenes/Odidoss.jpg"))); // NOI18N
         getContentPane().add(ivProducto2, new org.netbeans.lib.awtextra.AbsoluteConstraints(225, 92, 170, 170));
 
-        ivProducto3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/store/imagenes/pescado.jpg"))); // NOI18N
+        ivProducto3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/store/imagenes/conviertase.jpg"))); // NOI18N
         getContentPane().add(ivProducto3, new org.netbeans.lib.awtextra.AbsoluteConstraints(423, 92, 170, 170));
 
-        ivProducto4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/store/imagenes/refresco.jpg"))); // NOI18N
+        ivProducto4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/store/imagenes/obama.jpg"))); // NOI18N
         getContentPane().add(ivProducto4, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 92, 170, 170));
 
-        tAceiteVegetal.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        tAceiteVegetal.setForeground(new java.awt.Color(255, 255, 255));
-        tAceiteVegetal.setText("Aceite vegetal");
-        getContentPane().add(tAceiteVegetal, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, -1, -1));
+        cMike.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        cMike.setForeground(new java.awt.Color(255, 255, 255));
+        cMike.setText("Camiseta MIKE");
+        getContentPane().add(cMike, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 270, 130, -1));
 
-        tLeche.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        tLeche.setForeground(new java.awt.Color(255, 255, 255));
-        tLeche.setText("Leche de vaca");
-        getContentPane().add(tLeche, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 270, -1, -1));
+        pOdidoss.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        pOdidoss.setForeground(new java.awt.Color(255, 255, 255));
+        pOdidoss.setText("Pantalones Odidoss");
+        getContentPane().add(pOdidoss, new org.netbeans.lib.awtextra.AbsoluteConstraints(232, 270, 170, -1));
 
-        tAtun.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        tAtun.setForeground(new java.awt.Color(255, 255, 255));
-        tAtun.setText("Atún en lata");
-        getContentPane().add(tAtun, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 270, -1, -1));
+        zCas.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        zCas.setForeground(new java.awt.Color(255, 255, 255));
+        zCas.setText("Zapatillas CAS");
+        getContentPane().add(zCas, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 270, 120, -1));
 
-        tCola.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        tCola.setForeground(new java.awt.Color(255, 255, 255));
-        tCola.setText("Refresco en lata");
-        getContentPane().add(tCola, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 270, -1, -1));
+        mHabanic.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        mHabanic.setForeground(new java.awt.Color(255, 255, 255));
+        mHabanic.setText("Mochila Habanic");
+        getContentPane().add(mHabanic, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 270, -1, -1));
 
         precio1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         precio1.setForeground(new java.awt.Color(255, 255, 0));
@@ -444,6 +444,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton btSuma2;
     private javax.swing.JButton btSuma3;
     private javax.swing.JButton btSuma4;
+    private javax.swing.JLabel cMike;
     private javax.swing.JTextField etCantidad1;
     private javax.swing.JTextField etCantidad2;
     private javax.swing.JTextField etCantidad3;
@@ -453,17 +454,16 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel ivProducto2;
     private javax.swing.JLabel ivProducto3;
     private javax.swing.JLabel ivProducto4;
+    private javax.swing.JLabel mHabanic;
+    private javax.swing.JLabel pOdidoss;
     private javax.swing.JLabel precio1;
     private javax.swing.JLabel precio2;
     private javax.swing.JLabel precio3;
     private javax.swing.JLabel precio4;
-    private javax.swing.JLabel tAceiteVegetal;
-    private javax.swing.JLabel tAtun;
-    private javax.swing.JLabel tCola;
-    private javax.swing.JLabel tLeche;
     private javax.swing.JLabel txtCantidad;
     private javax.swing.JLabel txtCantidad1;
     private javax.swing.JLabel txtCantidad2;
     private javax.swing.JLabel txtCantidad3;
+    private javax.swing.JLabel zCas;
     // End of variables declaration//GEN-END:variables
 }

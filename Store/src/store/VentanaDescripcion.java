@@ -75,11 +75,11 @@ public class VentanaDescripcion extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel3.setText("Cantidad");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel4.setText("Precio");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 110, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
@@ -92,60 +92,60 @@ public class VentanaDescripcion extends javax.swing.JFrame {
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 110, -1, -1));
 
         txtArticulo1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        txtArticulo1.setText("Aceite vegetal");
+        txtArticulo1.setText("Camiseta MIKE");
         getContentPane().add(txtArticulo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 130, -1));
 
         txtArticulo2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        txtArticulo2.setText("Leche de vaca");
-        getContentPane().add(txtArticulo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 130, -1));
+        txtArticulo2.setText("Pantalones Odidoss");
+        getContentPane().add(txtArticulo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 170, -1));
 
         txtArticulo3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        txtArticulo3.setText("Atún en lata");
-        getContentPane().add(txtArticulo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 130, -1));
+        txtArticulo3.setText("Zapatillas CAS");
+        getContentPane().add(txtArticulo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 120, -1));
 
         txtArticulo4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        txtArticulo4.setText("Refresco en lata");
-        getContentPane().add(txtArticulo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 130, -1));
+        txtArticulo4.setText("Mochila Habanic");
+        getContentPane().add(txtArticulo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 140, -1));
 
         txtCantidad1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         txtCantidad1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtCantidad1.setText("0");
-        getContentPane().add(txtCantidad1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 50, -1));
+        getContentPane().add(txtCantidad1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, 50, -1));
 
         txtCantidad2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         txtCantidad2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtCantidad2.setText("0");
-        getContentPane().add(txtCantidad2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 50, -1));
+        getContentPane().add(txtCantidad2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 50, -1));
 
         txtCantidad3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         txtCantidad3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtCantidad3.setText("0");
-        getContentPane().add(txtCantidad3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, 50, -1));
+        getContentPane().add(txtCantidad3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, 50, -1));
 
         txtCantidad4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         txtCantidad4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtCantidad4.setText("0");
-        getContentPane().add(txtCantidad4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 50, -1));
+        getContentPane().add(txtCantidad4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 230, 50, -1));
 
         txtPrecio1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         txtPrecio1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtPrecio1.setText("$0");
-        getContentPane().add(txtPrecio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 60, -1));
+        getContentPane().add(txtPrecio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 140, 60, -1));
 
         txtPrecio2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         txtPrecio2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtPrecio2.setText("$0");
-        getContentPane().add(txtPrecio2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, 60, -1));
+        getContentPane().add(txtPrecio2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 170, 60, -1));
 
         txtPrecio3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         txtPrecio3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtPrecio3.setText("$0");
-        getContentPane().add(txtPrecio3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, 60, -1));
+        getContentPane().add(txtPrecio3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 200, 60, -1));
 
         txtPrecio4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         txtPrecio4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtPrecio4.setText("$0");
-        getContentPane().add(txtPrecio4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 230, 60, -1));
+        getContentPane().add(txtPrecio4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 230, 60, -1));
 
         txtDescuento1.setBackground(new java.awt.Color(255, 255, 255));
         txtDescuento1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -226,7 +226,7 @@ public class VentanaDescripcion extends javax.swing.JFrame {
         txtTotalPagar.setForeground(new java.awt.Color(255, 255, 255));
         txtTotalPagar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtTotalPagar.setText("$0");
-        getContentPane().add(txtTotalPagar, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 260, 110, -1));
+        getContentPane().add(txtTotalPagar, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 350, 110, -1));
 
         campoDescuento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

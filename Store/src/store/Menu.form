@@ -45,7 +45,7 @@
     <Component class="javax.swing.JLabel" name="ivProducto1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/store/imagenes/aceite.jpg"/>
+          <Image iconType="3" name="/store/imagenes/Mike.jpg"/>
         </Property>
       </Properties>
       <Constraints>
@@ -57,7 +57,7 @@
     <Component class="javax.swing.JLabel" name="ivProducto2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/store/imagenes/leche.jpg"/>
+          <Image iconType="3" name="/store/imagenes/Odidoss.jpg"/>
         </Property>
       </Properties>
       <Constraints>
@@ -69,7 +69,7 @@
     <Component class="javax.swing.JLabel" name="ivProducto3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/store/imagenes/pescado.jpg"/>
+          <Image iconType="3" name="/store/imagenes/conviertase.jpg"/>
         </Property>
       </Properties>
       <Constraints>
@@ -81,7 +81,7 @@
     <Component class="javax.swing.JLabel" name="ivProducto4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/store/imagenes/refresco.jpg"/>
+          <Image iconType="3" name="/store/imagenes/obama.jpg"/>
         </Property>
       </Properties>
       <Constraints>
@@ -90,7 +90,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="tAceiteVegetal">
+    <Component class="javax.swing.JLabel" name="cMike">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="18" style="0"/>
@@ -98,15 +98,15 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Aceite vegetal"/>
+        <Property name="text" type="java.lang.String" value="Camiseta MIKE"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="60" y="270" width="-1" height="-1"/>
+          <AbsoluteConstraints x="56" y="270" width="130" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="tLeche">
+    <Component class="javax.swing.JLabel" name="pOdidoss">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="18" style="0"/>
@@ -114,15 +114,15 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Leche de vaca"/>
+        <Property name="text" type="java.lang.String" value="Pantalones Odidoss"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="260" y="270" width="-1" height="-1"/>
+          <AbsoluteConstraints x="232" y="270" width="170" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="tAtun">
+    <Component class="javax.swing.JLabel" name="zCas">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="18" style="0"/>
@@ -130,15 +130,15 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="At&#xfa;n en lata"/>
+        <Property name="text" type="java.lang.String" value="Zapatillas CAS"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="460" y="270" width="-1" height="-1"/>
+          <AbsoluteConstraints x="449" y="270" width="120" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="tCola">
+    <Component class="javax.swing.JLabel" name="mHabanic">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="18" style="0"/>
@@ -146,7 +146,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Refresco en lata"/>
+        <Property name="text" type="java.lang.String" value="Mochila Habanic"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
