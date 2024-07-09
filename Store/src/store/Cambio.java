@@ -14,6 +14,7 @@ public class Cambio extends javax.swing.JFrame {
         this.setResizable(false);
         btCerrar.setVisible(false);
         btCerrar.setEnabled(false);
+        campoCambio.setText("0");
     }
 
     /**
