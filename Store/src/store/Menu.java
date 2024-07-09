@@ -96,22 +96,22 @@ public class Menu extends javax.swing.JFrame {
 
         precio1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         precio1.setForeground(new java.awt.Color(255, 255, 0));
-        precio1.setText("$48.72");
+        precio1.setText("48.72€");
         getContentPane().add(precio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, -1, -1));
 
         precio2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         precio2.setForeground(new java.awt.Color(255, 255, 0));
-        precio2.setText("$21.37");
+        precio2.setText("21.37€");
         getContentPane().add(precio2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, -1, -1));
 
         precio3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         precio3.setForeground(new java.awt.Color(255, 255, 0));
-        precio3.setText("$12.6");
+        precio3.setText("12.6€");
         getContentPane().add(precio3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 290, -1, -1));
 
         precio4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         precio4.setForeground(new java.awt.Color(255, 255, 0));
-        precio4.setText("$21.92");
+        precio4.setText("21.92€");
         getContentPane().add(precio4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 290, -1, -1));
 
         btSuma1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
