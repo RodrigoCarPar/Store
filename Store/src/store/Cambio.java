@@ -27,16 +27,16 @@ public class Cambio extends javax.swing.JFrame {
 
         txtCambio = new javax.swing.JLabel();
         txtTotal = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        etCambio = new javax.swing.JTextField();
+        labelTotal = new javax.swing.JLabel();
+        campoCambio = new javax.swing.JTextField();
         btCalcular = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        labelMoneda1 = new javax.swing.JLabel();
+        labelMoneda2 = new javax.swing.JLabel();
+        labelMoneda3 = new javax.swing.JLabel();
+        labelRecibir = new javax.swing.JLabel();
+        labelCambio = new javax.swing.JLabel();
         btCerrar = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        labelVentana = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -50,13 +50,18 @@ public class Cambio extends javax.swing.JFrame {
         txtTotal.setText("0");
         getContentPane().add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 40, 120, -1));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel3.setText("Total a pagar");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
+        labelTotal.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        labelTotal.setText("Total a pagar");
+        getContentPane().add(labelTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
 
-        etCambio.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        etCambio.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        getContentPane().add(etCambio, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, 100, -1));
+        campoCambio.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        campoCambio.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        campoCambio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoCambioActionPerformed(evt);
+            }
+        });
+        getContentPane().add(campoCambio, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, 100, -1));
 
         btCalcular.setText("calcular");
         btCalcular.addActionListener(new java.awt.event.ActionListener() {
@@ -66,17 +71,25 @@ public class Cambio extends javax.swing.JFrame {
         });
         getContentPane().add(btCalcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 130, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel4.setText("€");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 40, -1, -1));
+        labelMoneda1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        labelMoneda1.setText("€");
+        getContentPane().add(labelMoneda1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 40, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel5.setText("Recibí");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, -1));
+        labelMoneda2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        labelMoneda2.setText("€");
+        getContentPane().add(labelMoneda2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 90, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel6.setText("Cambio");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
+        labelMoneda3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        labelMoneda3.setText("€");
+        getContentPane().add(labelMoneda3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 190, -1, -1));
+
+        labelRecibir.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        labelRecibir.setText("Recibí");
+        getContentPane().add(labelRecibir, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, -1));
+
+        labelCambio.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        labelCambio.setText("Cambio");
+        getContentPane().add(labelCambio, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
 
         btCerrar.setBackground(new java.awt.Color(255, 255, 0));
         btCerrar.setFont(new java.awt.Font("Arial", 2, 24)); // NOI18N
@@ -87,15 +100,7 @@ public class Cambio extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, -1, -1));
-
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel8.setText("€");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 190, -1, -1));
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 430, 330));
-
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel9.setText("$");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 90, -1, -1));
+        getContentPane().add(labelVentana, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 430, 330));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -107,7 +112,7 @@ public class Cambio extends javax.swing.JFrame {
         dfs.setDecimalSeparator(',');
         df.setDecimalFormatSymbols(dfs);
         BigDecimal pagoTotal= new BigDecimal(txtTotal.getText());
-        BigDecimal recibi = new BigDecimal(etCambio.getText());        
+        BigDecimal recibi = new BigDecimal(campoCambio.getText());        
         BigDecimal operacion= recibi.subtract(pagoTotal);
         String op = df.format(operacion);
         txtCambio.setText(operacion.toPlainString());
@@ -128,6 +133,10 @@ public class Cambio extends javax.swing.JFrame {
         
  
     }//GEN-LAST:event_btCerrarActionPerformed
+
+    private void campoCambioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoCambioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoCambioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -170,14 +179,14 @@ public class Cambio extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btCalcular;
     private javax.swing.JButton btCerrar;
-    private javax.swing.JTextField etCambio;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField campoCambio;
+    private javax.swing.JLabel labelCambio;
+    private javax.swing.JLabel labelMoneda1;
+    private javax.swing.JLabel labelMoneda2;
+    private javax.swing.JLabel labelMoneda3;
+    private javax.swing.JLabel labelRecibir;
+    private javax.swing.JLabel labelTotal;
+    private javax.swing.JLabel labelVentana;
     private javax.swing.JLabel txtCambio;
     private javax.swing.JLabel txtTotal;
     // End of variables declaration//GEN-END:variables
