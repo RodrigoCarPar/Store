@@ -409,9 +409,9 @@ public class VentanaDescripcion extends javax.swing.JFrame {
         
  
         txtPrecio1.setText(p1.toPlainString()+"€");
-        txtPrecio2.setText("$"+p2.toPlainString()+"€");
-        txtPrecio3.setText("$"+p3.toPlainString()+"€");
-        txtPrecio4.setText("$"+p4.toPlainString()+"€");
+        txtPrecio2.setText(p2.toPlainString()+"€");
+        txtPrecio3.setText(p3.toPlainString()+"€");
+        txtPrecio4.setText(p4.toPlainString()+"€");
         // descuentos
         BigDecimal cantidadp1 = new BigDecimal(cantidad1);
         BigDecimal cantidadp2 = new BigDecimal(cantidad2);
