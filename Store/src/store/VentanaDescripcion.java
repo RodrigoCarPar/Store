@@ -29,11 +29,11 @@ public class VentanaDescripcion extends javax.swing.JFrame {
     private void initComponents() {
 
         labelDetalles = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        labelArticulos = new javax.swing.JLabel();
         labelCantidads = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        labelPrecios = new javax.swing.JLabel();
+        labelDescuentos = new javax.swing.JLabel();
+        labelTotals = new javax.swing.JLabel();
         txtArticulo1 = new javax.swing.JLabel();
         txtArticulo2 = new javax.swing.JLabel();
         txtArticulo3 = new javax.swing.JLabel();
@@ -69,27 +69,27 @@ public class VentanaDescripcion extends javax.swing.JFrame {
         labelDetalles.setText("Detalles de la venta");
         getContentPane().add(labelDetalles, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 50, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel2.setText("Artículo");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
+        labelArticulos.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        labelArticulos.setText("Artículo");
+        getContentPane().add(labelArticulos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
 
         labelCantidads.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         labelCantidads.setText("Cantidad");
         getContentPane().add(labelCantidads, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel4.setText("Precio");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, -1, -1));
+        labelPrecios.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        labelPrecios.setText("Precio");
+        getContentPane().add(labelPrecios, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Descuento");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 110, -1, -1));
+        labelDescuentos.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        labelDescuentos.setForeground(new java.awt.Color(255, 255, 255));
+        labelDescuentos.setText("Descuento");
+        getContentPane().add(labelDescuentos, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 110, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Total a pagar");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 110, -1, -1));
+        labelTotals.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        labelTotals.setForeground(new java.awt.Color(255, 255, 255));
+        labelTotals.setText("Total a pagar");
+        getContentPane().add(labelTotals, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 110, -1, -1));
 
         txtArticulo1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         txtArticulo1.setText("Camiseta MIKE");
@@ -233,7 +233,7 @@ public class VentanaDescripcion extends javax.swing.JFrame {
                 campoDescuentoActionPerformed(evt);
             }
         });
-        getContentPane().add(campoDescuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 440, 70, -1));
+        getContentPane().add(campoDescuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 140, -1));
 
         btDescuento.setBackground(new java.awt.Color(255, 255, 0));
         btDescuento.setText("Aplicar");
@@ -301,19 +301,19 @@ public class VentanaDescripcion extends javax.swing.JFrame {
 
             
             if (codigoDescuento.equals(DESCUENTO_5)) {
-                descuento = new BigDecimal (0.95);
+                descuento = new BigDecimal(0.95);
                 btDescuento.setEnabled(false);
                 btDescuento.setVisible(false);
                 descuentoNoValido.setVisible(false);
                 
             } else if (codigoDescuento.equals(DESCUENTO_10)) {
-                descuento = new BigDecimal (0.90);
+                descuento = new BigDecimal(0.90);
                 btDescuento.setEnabled(false);
                 btDescuento.setVisible(false);
                 descuentoNoValido.setVisible(false);
                 
             } else if (codigoDescuento.equals(DESCUENTO_20)) { 
-                descuento = new BigDecimal (0.80);
+                descuento = new BigDecimal(0.80);
                 btDescuento.setEnabled(false);
                 btDescuento.setVisible(false);
                 descuentoNoValido.setVisible(false);
@@ -461,12 +461,12 @@ public class VentanaDescripcion extends javax.swing.JFrame {
     private javax.swing.JTextField campoDescuento;
     private javax.swing.JLabel descuentoNoValido;
     private javax.swing.JLabel fondo;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel labelArticulos;
     private javax.swing.JLabel labelCantidads;
+    private javax.swing.JLabel labelDescuentos;
     private javax.swing.JLabel labelDetalles;
+    private javax.swing.JLabel labelPrecios;
+    private javax.swing.JLabel labelTotals;
     private javax.swing.JLabel txtArticulo1;
     private javax.swing.JLabel txtArticulo2;
     private javax.swing.JLabel txtArticulo3;
