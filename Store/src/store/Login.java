@@ -38,7 +38,7 @@ public class Login extends javax.swing.JFrame {
 
         txtUsuario.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         txtUsuario.setText("Ingresa tu contraseña");
-        getContentPane().add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 360, 230, 40));
+        getContentPane().add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 360, 330, 40));
 
         Password.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         Password.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -65,13 +65,13 @@ public class Login extends javax.swing.JFrame {
         txtSalida.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtSalida.setText("datos no validos");
         txtSalida.setToolTipText("");
-        getContentPane().add(txtSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 330, 20));
+        getContentPane().add(txtSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, 160, 20));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel1.setText("Ingresa tu usuario");
         jLabel1.setMaximumSize(new java.awt.Dimension(228, 228));
         jLabel1.setMinimumSize(new java.awt.Dimension(228, 228));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, 240, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 280, 330, -1));
 
         Usuario.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         Usuario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -84,7 +84,7 @@ public class Login extends javax.swing.JFrame {
 
         userimg.setForeground(new java.awt.Color(0, 51, 204));
         userimg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/store/imagenes/user.png"))); // NOI18N
-        getContentPane().add(userimg, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, -1, -1));
+        getContentPane().add(userimg, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, 170, -1));
 
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/store/imagenes/login.png"))); // NOI18N
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 804, 501));
