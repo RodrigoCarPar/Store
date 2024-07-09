@@ -107,14 +107,9 @@ public class Cambio extends javax.swing.JFrame {
 
     private void btCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCalcularActionPerformed
         // TODO add your handling code here:
-        DecimalFormat df = new DecimalFormat("#,##");
-        DecimalFormatSymbols dfs= new DecimalFormatSymbols();
-        dfs.setDecimalSeparator(',');
-        df.setDecimalFormatSymbols(dfs);
         BigDecimal pagoTotal= new BigDecimal(txtTotal.getText());
         BigDecimal recibi = new BigDecimal(campoCambio.getText());        
         BigDecimal operacion= recibi.subtract(pagoTotal);
-        String op = df.format(operacion);
         txtCambio.setText(operacion.toPlainString());
     }//GEN-LAST:event_btCalcularActionPerformed
 
