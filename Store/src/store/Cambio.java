@@ -12,6 +12,8 @@ public class Cambio extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         this.setTitle("Cambio");
         this.setResizable(false);
+        btCerrar.setVisible(false);
+        btCerrar.setEnabled(false);
     }
 
     /**
@@ -112,6 +114,8 @@ public class Cambio extends javax.swing.JFrame {
         }else{
             BigDecimal operacion= recibi.subtract(pagoTotal);
             txtCambio.setText(operacion.toPlainString());
+            btCerrar.setVisible(true);
+            btCerrar.setEnabled(true);
         }
         
     }//GEN-LAST:event_btCalcularActionPerformed
