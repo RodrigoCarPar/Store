@@ -43,7 +43,7 @@ public class Cambio extends javax.swing.JFrame {
 
         txtCambio.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         txtCambio.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(txtCambio, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 240, 90, 30));
+        getContentPane().add(txtCambio, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 190, 90, 30));
 
         txtTotal.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         txtTotal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
