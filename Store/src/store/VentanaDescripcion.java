@@ -15,7 +15,7 @@ public class VentanaDescripcion extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         this.setTitle("Detalles de venta");
         this.setResizable(false);
-        DescuentoNoValido.setVisible(false);
+        descuentoNoValido.setVisible(false);
        
     }
 
@@ -28,9 +28,9 @@ public class VentanaDescripcion extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        labelDetalles = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        labelCantidads = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -58,24 +58,24 @@ public class VentanaDescripcion extends javax.swing.JFrame {
         btPagar = new javax.swing.JButton();
         txtTotalPagar = new javax.swing.JLabel();
         campoDescuento = new javax.swing.JTextField();
-        BotonDescuento = new javax.swing.JButton();
-        DescuentoNoValido = new javax.swing.JLabel();
+        btDescuento = new javax.swing.JButton();
+        descuentoNoValido = new javax.swing.JLabel();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Arial", 2, 24)); // NOI18N
-        jLabel1.setText("Detalles de la venta");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 50, -1, -1));
+        labelDetalles.setFont(new java.awt.Font("Arial", 2, 24)); // NOI18N
+        labelDetalles.setText("Detalles de la venta");
+        getContentPane().add(labelDetalles, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 50, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setText("Artículo");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel3.setText("Cantidad");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, -1, -1));
+        labelCantidads.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        labelCantidads.setText("Cantidad");
+        getContentPane().add(labelCantidads, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel4.setText("Precio");
@@ -235,23 +235,23 @@ public class VentanaDescripcion extends javax.swing.JFrame {
         });
         getContentPane().add(campoDescuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 440, 70, -1));
 
-        BotonDescuento.setBackground(new java.awt.Color(255, 255, 0));
-        BotonDescuento.setText("Aplicar");
-        BotonDescuento.addMouseListener(new java.awt.event.MouseAdapter() {
+        btDescuento.setBackground(new java.awt.Color(255, 255, 0));
+        btDescuento.setText("Aplicar");
+        btDescuento.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                BotonDescuentoMouseClicked(evt);
+                btDescuentoMouseClicked(evt);
             }
         });
-        BotonDescuento.addActionListener(new java.awt.event.ActionListener() {
+        btDescuento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonDescuentoActionPerformed(evt);
+                btDescuentoActionPerformed(evt);
             }
         });
-        getContentPane().add(BotonDescuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 440, -1, -1));
+        getContentPane().add(btDescuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 440, -1, -1));
 
-        DescuentoNoValido.setText("Codigo de descuento no valido");
-        DescuentoNoValido.setToolTipText("");
-        getContentPane().add(DescuentoNoValido, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 440, 180, 20));
+        descuentoNoValido.setText("Codigo de descuento no valido");
+        descuentoNoValido.setToolTipText("");
+        getContentPane().add(descuentoNoValido, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 440, 180, 20));
 
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/store/imagenes/ventanaPago.png"))); // NOI18N
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 500));
@@ -277,15 +277,15 @@ public class VentanaDescripcion extends javax.swing.JFrame {
         ventana2.setVisible(true);
     }//GEN-LAST:event_btRegresarActionPerformed
 
-    private void BotonDescuentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonDescuentoActionPerformed
+    private void btDescuentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btDescuentoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_BotonDescuentoActionPerformed
+    }//GEN-LAST:event_btDescuentoActionPerformed
 
     private void campoDescuentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoDescuentoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_campoDescuentoActionPerformed
 
-    private void BotonDescuentoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonDescuentoMouseClicked
+    private void btDescuentoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btDescuentoMouseClicked
         // TODO add your handling code here:
        
         //DANI
@@ -302,25 +302,25 @@ public class VentanaDescripcion extends javax.swing.JFrame {
             
             if (codigoDescuento.equals(DESCUENTO_5)) {
                 descuento = new BigDecimal (0.95);
-                BotonDescuento.setEnabled(false);
-                BotonDescuento.setVisible(false);
-                DescuentoNoValido.setVisible(false);
+                btDescuento.setEnabled(false);
+                btDescuento.setVisible(false);
+                descuentoNoValido.setVisible(false);
                 
             } else if (codigoDescuento.equals(DESCUENTO_10)) {
                 descuento = new BigDecimal (0.90);
-                BotonDescuento.setEnabled(false);
-                BotonDescuento.setVisible(false);
-                DescuentoNoValido.setVisible(false);
+                btDescuento.setEnabled(false);
+                btDescuento.setVisible(false);
+                descuentoNoValido.setVisible(false);
                 
             } else if (codigoDescuento.equals(DESCUENTO_20)) { 
                 descuento = new BigDecimal (0.80);
-                BotonDescuento.setEnabled(false);
-                BotonDescuento.setVisible(false);
-                DescuentoNoValido.setVisible(false);
+                btDescuento.setEnabled(false);
+                btDescuento.setVisible(false);
+                descuentoNoValido.setVisible(false);
                 
             } else {
                 
-                DescuentoNoValido.setVisible(true);
+                descuentoNoValido.setVisible(true);
                 
             }
     
@@ -340,7 +340,7 @@ public class VentanaDescripcion extends javax.swing.JFrame {
             
     
     
-    }//GEN-LAST:event_BotonDescuentoMouseClicked
+    }//GEN-LAST:event_btDescuentoMouseClicked
 
     /**
      * @param args the command line arguments
@@ -378,7 +378,6 @@ public class VentanaDescripcion extends javax.swing.JFrame {
         });
     }
     public void cantidades(String cantidad1, String cantidad2, String cantidad3, String cantidad4){
-        DecimalFormat df = new DecimalFormat("#,##");
         //Cantidad
         txtCantidad1.setText(cantidad1);
         txtCantidad2.setText(cantidad2);
@@ -420,134 +419,7 @@ public class VentanaDescripcion extends javax.swing.JFrame {
        
         
         //DESCUENTOS MODIFICADO
-      /*  int cDescuentos;
-        float aPagar1;
-        float aPagar2;
-        float aPagar3;
-        float aPagar4;
-        //desceuntos para productos del 1 al 4
-        if(cantidadp1>=3){          
-            if(cantidadp1==3){ 
-                String descuento= df.format(p1);
-                float cantidadF = Float.valueOf(cantidadp1);
-                aPagar1= (cantidadF-1f)*p1;
-                String total1 = df.format(aPagar1);
-                txtDescuento1.setText("$"+descuento);
-                txtPagar1.setText("$"+total1);
-
-            }else{
-                cDescuentos = (cantidadp1/3);
-                int cantidad= cantidadp1-(cDescuentos);
-                float cantidadP= Float.valueOf(cantidad);
-                
-                float desc= p1*cDescuentos;
-                aPagar1= p1*cantidadP;
-                
-                String descuento= df.format(desc);
-                txtDescuento1.setText("$"+descuento);
-                
-                String total1= df.format(aPagar1);
-                txtPagar1.setText("$"+total1);
-                
-            }
-        }else{
-            float cant1= Float.valueOf(cantidadp1);
-            aPagar1= p1*cant1;
-            String total1= String.valueOf(aPagar1);
-            txtPagar1.setText("$"+total1);
-        }
-        if(cantidadp2>=3){          
-            if(cantidadp2==3){ 
-                String descuento= df.format(p2);
-                float cantidadF = Float.valueOf(cantidadp2);
-                aPagar2= (cantidadF-1f)*p2;
-                String total2 = df.format(aPagar2);
-                txtDescuento2.setText("$"+descuento);
-                txtPagar2.setText("$"+total2); 
-            }else{
-                cDescuentos = (cantidadp2/3);
-                int cantidad= cantidadp2-(cDescuentos);
-                float cantidadP= Float.valueOf(cantidad);
-                
-                float desc= p2*cDescuentos;
-                aPagar2= p2*cantidadP;
-                
-                String descuento= df.format(desc);
-                txtDescuento2.setText("$"+descuento);
-                
-                String total2= df.format(aPagar2);
-                txtPagar2.setText("$"+total2);
-                
-            }
-        }else{
-            float cant2= Float.valueOf(cantidadp2);
-            aPagar2= p2*cant2;
-            String total2= String.valueOf(aPagar2);
-            txtPagar2.setText("$"+total2);
-        }
-        if(cantidadp3>=3){          
-            if(cantidadp3==3){ 
-                String descuento= df.format(p3);
-                float cantidadF = Float.valueOf(cantidadp3);
-                aPagar3= (cantidadF-1f)*p3;
-                String total3 = df.format(aPagar3);
-                txtDescuento3.setText("$"+descuento);
-                txtPagar3.setText("$"+total3);
-            }else{
-                cDescuentos = (cantidadp3/3);
-                int cantidad= cantidadp3-(cDescuentos);
-                float cantidadP= Float.valueOf(cantidad);
-                
-                float desc= p3*cDescuentos;
-                aPagar3= p3*cantidadP;
-                
-                String total3= df.format(desc);
-                txtDescuento3.setText("$"+total3);
-                
-                String descuentoTotal= df.format(aPagar3);
-                txtPagar3.setText("$"+descuentoTotal);
-                
-            }
-        }else{
-            float cant3= Float.valueOf(cantidadp3);
-            aPagar3= p3*cant3;
-            String total3= String.valueOf(aPagar3);
-            txtPagar3.setText("$"+total3);
-        }
-        if(cantidadp4>=3){          
-            if(cantidadp4==3){ 
-                String descuento= df.format(p4);
-                float cantidadF = Float.valueOf(cantidadp4);
-                aPagar4= (cantidadF-1f)*p4;
-                String total4 = df.format(aPagar4);
-                txtDescuento4.setText("$"+descuento);
-                txtPagar4.setText("$"+total4);
-            }else{
-                cDescuentos = (cantidadp4/3);
-                int cantidad= cantidadp4-(cDescuentos);
-                float cantidadP= Float.valueOf(cantidad);
-                
-                float desc= p4*cDescuentos;
-                aPagar4= p4*cantidadP;
-                
-                String descuento= df.format(desc);
-                txtDescuento4.setText("$"+descuento);
-                
-                String total4= df.format(aPagar4);
-                txtPagar4.setText("$"+total4);
-                
-            }
-        }else{
-            float cant4= Float.valueOf(cantidadp4);
-            aPagar4= p4*cant4;
-            String total4= df.format(aPagar4);
-            txtPagar4.setText("$"+total4);
-        }
-        
-        float pagoTotal= aPagar1 + aPagar2 + aPagar3 + aPagar4;
-        String pagoTotalS = df.format(pagoTotal);
-        txtTotalPagar.setText(pagoTotalS);
-      */
+      
       
       //Lo de ABAJO es MIO
       
@@ -573,13 +445,7 @@ public class VentanaDescripcion extends javax.swing.JFrame {
      
       //Dani arriba
       
-     // float descuento = (float) 0;
-     // float descuento2;
-        
-//        descuento2 = pagoTotal * descuento;
-//        float precioConDescuento = pagoTotal - descuento2;
-//        pagoTotal = precioConDescuento;
-        String pagoTotalS = df.format(pagoTotal);
+     
         txtTotalPagar.setText(pagoTotal.toPlainString());
         
         
@@ -589,18 +455,18 @@ public class VentanaDescripcion extends javax.swing.JFrame {
         
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BotonDescuento;
-    private javax.swing.JLabel DescuentoNoValido;
+    private javax.swing.JButton btDescuento;
     private javax.swing.JButton btPagar;
     private javax.swing.JButton btRegresar;
     private javax.swing.JTextField campoDescuento;
+    private javax.swing.JLabel descuentoNoValido;
     private javax.swing.JLabel fondo;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel labelCantidads;
+    private javax.swing.JLabel labelDetalles;
     private javax.swing.JLabel txtArticulo1;
     private javax.swing.JLabel txtArticulo2;
     private javax.swing.JLabel txtArticulo3;
