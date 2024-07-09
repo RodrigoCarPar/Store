@@ -1,6 +1,4 @@
 package store;
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
 import java.math.BigDecimal;
 import javax.swing.*;
 
