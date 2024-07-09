@@ -12,7 +12,7 @@ public class Login extends javax.swing.JFrame {
         this.setTitle("Inicio de sesión");
         this.setResizable(false);
         txtSalida.setVisible(false);
-        etUsuario.setEchoChar((char)0);
+        Usuario.setEchoChar((char)0);
     }
 
     /**
@@ -25,11 +25,11 @@ public class Login extends javax.swing.JFrame {
     private void initComponents() {
 
         txtUsuario = new javax.swing.JLabel();
-        etPassword = new javax.swing.JPasswordField();
+        Password = new javax.swing.JPasswordField();
         Ingresar = new javax.swing.JButton();
         txtSalida = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        etUsuario = new javax.swing.JPasswordField();
+        Usuario = new javax.swing.JPasswordField();
         userimg = new javax.swing.JLabel();
         fondo = new javax.swing.JLabel();
 
@@ -40,15 +40,15 @@ public class Login extends javax.swing.JFrame {
         txtUsuario.setText("Ingresa tu contraseña");
         getContentPane().add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 360, 230, 40));
 
-        etPassword.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        etPassword.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        etPassword.setToolTipText("");
-        etPassword.addFocusListener(new java.awt.event.FocusAdapter() {
+        Password.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Password.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Password.setToolTipText("");
+        Password.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                etPasswordFocusGained(evt);
+                PasswordFocusGained(evt);
             }
         });
-        getContentPane().add(etPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 410, 330, 40));
+        getContentPane().add(Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 410, 330, 40));
 
         Ingresar.setBackground(new java.awt.Color(255, 255, 0));
         Ingresar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -73,14 +73,14 @@ public class Login extends javax.swing.JFrame {
         jLabel1.setMinimumSize(new java.awt.Dimension(228, 228));
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, 240, -1));
 
-        etUsuario.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        etUsuario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        etUsuario.addFocusListener(new java.awt.event.FocusAdapter() {
+        Usuario.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Usuario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Usuario.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                etUsuarioFocusGained(evt);
+                UsuarioFocusGained(evt);
             }
         });
-        getContentPane().add(etUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 322, 330, 40));
+        getContentPane().add(Usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 322, 330, 40));
 
         userimg.setForeground(new java.awt.Color(0, 51, 204));
         userimg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/store/imagenes/user.png"))); // NOI18N
@@ -101,21 +101,21 @@ public class Login extends javax.swing.JFrame {
             ventana2.setVisible(true);
         }else{
             txtSalida.setVisible(true);
-            etPassword.setText(null);
-            etUsuario.setText(null);
+            Password.setText(null);
+            Usuario.setText(null);
         }
         
     }//GEN-LAST:event_IngresarActionPerformed
 
-    private void etUsuarioFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_etUsuarioFocusGained
+    private void UsuarioFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_UsuarioFocusGained
         // TODO add your handling code here:
         txtSalida.setVisible(false);
-    }//GEN-LAST:event_etUsuarioFocusGained
+    }//GEN-LAST:event_UsuarioFocusGained
 
-    private void etPasswordFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_etPasswordFocusGained
+    private void PasswordFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_PasswordFocusGained
         // TODO add your handling code here:
         txtSalida.setVisible(false);
-    }//GEN-LAST:event_etPasswordFocusGained
+    }//GEN-LAST:event_PasswordFocusGained
 
     /**
      * @param args the command line arguments
@@ -154,7 +154,7 @@ public class Login extends javax.swing.JFrame {
     }
     private boolean VerificarContraseña(){
         String password = "123456";
-        String ingresada = etPassword.getText();
+        String ingresada = Password.getText();
         
         if(ingresada.equals(password)){
             return true;
@@ -163,7 +163,7 @@ public class Login extends javax.swing.JFrame {
     }
     private boolean VerificarUsuario(){
         String user = "admin";
-        String ingresada = etUsuario.getText();
+        String ingresada = Usuario.getText();
         
         if(ingresada.equals(user)){
             return true;
@@ -173,8 +173,8 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Ingresar;
-    private javax.swing.JPasswordField etPassword;
-    private javax.swing.JPasswordField etUsuario;
+    private javax.swing.JPasswordField Password;
+    private javax.swing.JPasswordField Usuario;
     private javax.swing.JLabel fondo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel txtSalida;

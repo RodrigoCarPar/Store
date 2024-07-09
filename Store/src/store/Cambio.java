@@ -43,7 +43,7 @@ public class Cambio extends javax.swing.JFrame {
 
         txtCambio.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         txtCambio.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(txtCambio, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 190, 90, 30));
+        getContentPane().add(txtCambio, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 240, 90, 30));
 
         txtTotal.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         txtTotal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -67,7 +67,7 @@ public class Cambio extends javax.swing.JFrame {
         getContentPane().add(btCalcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 130, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel4.setText("$");
+        jLabel4.setText("€");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 40, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
@@ -89,7 +89,7 @@ public class Cambio extends javax.swing.JFrame {
         getContentPane().add(btCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel8.setText("$");
+        jLabel8.setText("€");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 190, -1, -1));
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 430, 330));
 
