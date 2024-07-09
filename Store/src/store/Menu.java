@@ -33,16 +33,16 @@ public class Menu extends javax.swing.JFrame {
         precio3 = new javax.swing.JLabel();
         precio4 = new javax.swing.JLabel();
         btSuma1 = new javax.swing.JButton();
-        etCantidad1 = new javax.swing.JTextField();
+        campoCantidad1 = new javax.swing.JTextField();
         btResta1 = new javax.swing.JButton();
         btSuma2 = new javax.swing.JButton();
-        etCantidad2 = new javax.swing.JTextField();
+        campoCantidad2 = new javax.swing.JTextField();
         btResta2 = new javax.swing.JButton();
         btSuma3 = new javax.swing.JButton();
-        etCantidad3 = new javax.swing.JTextField();
+        campoCantidad3 = new javax.swing.JTextField();
         btResta3 = new javax.swing.JButton();
         btSuma4 = new javax.swing.JButton();
-        etCantidad4 = new javax.swing.JTextField();
+        campoCantidad4 = new javax.swing.JTextField();
         btResta4 = new javax.swing.JButton();
         txtCantidad = new javax.swing.JLabel();
         txtCantidad1 = new javax.swing.JLabel();
@@ -123,15 +123,15 @@ public class Menu extends javax.swing.JFrame {
         });
         getContentPane().add(btSuma1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 350, 50, 30));
 
-        etCantidad1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        etCantidad1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        etCantidad1.setText("0");
-        etCantidad1.addActionListener(new java.awt.event.ActionListener() {
+        campoCantidad1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        campoCantidad1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        campoCantidad1.setText("0");
+        campoCantidad1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                etCantidad1ActionPerformed(evt);
+                campoCantidad1ActionPerformed(evt);
             }
         });
-        getContentPane().add(etCantidad1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 350, 50, 30));
+        getContentPane().add(campoCantidad1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 350, 50, 30));
 
         btResta1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btResta1.setText("-");
@@ -151,10 +151,10 @@ public class Menu extends javax.swing.JFrame {
         });
         getContentPane().add(btSuma2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, 50, 30));
 
-        etCantidad2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        etCantidad2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        etCantidad2.setText("0");
-        getContentPane().add(etCantidad2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 350, 50, 30));
+        campoCantidad2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        campoCantidad2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        campoCantidad2.setText("0");
+        getContentPane().add(campoCantidad2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 350, 50, 30));
 
         btResta2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btResta2.setText("-");
@@ -174,10 +174,15 @@ public class Menu extends javax.swing.JFrame {
         });
         getContentPane().add(btSuma3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 350, 50, 30));
 
-        etCantidad3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        etCantidad3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        etCantidad3.setText("0");
-        getContentPane().add(etCantidad3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 350, 50, 30));
+        campoCantidad3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        campoCantidad3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        campoCantidad3.setText("0");
+        campoCantidad3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoCantidad3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(campoCantidad3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 350, 50, 30));
 
         btResta3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btResta3.setText("-");
@@ -197,10 +202,15 @@ public class Menu extends javax.swing.JFrame {
         });
         getContentPane().add(btSuma4, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 350, 50, 30));
 
-        etCantidad4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        etCantidad4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        etCantidad4.setText("0");
-        getContentPane().add(etCantidad4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 350, 50, 30));
+        campoCantidad4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        campoCantidad4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        campoCantidad4.setText("0");
+        campoCantidad4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoCantidad4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(campoCantidad4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 350, 50, 30));
 
         btResta4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btResta4.setText("-");
@@ -264,59 +274,59 @@ public class Menu extends javax.swing.JFrame {
 
     private void btResta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btResta1ActionPerformed
         // TODO add your handling code here:
-        Integer cantidad = Integer.parseInt(etCantidad1.getText());
+        Integer cantidad = Integer.parseInt(campoCantidad1.getText());
         
         String resultado = String.valueOf(resta(cantidad));
        
-        etCantidad1.setText(resultado);
+        campoCantidad1.setText(resultado);
     }//GEN-LAST:event_btResta1ActionPerformed
 
     private void btResta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btResta2ActionPerformed
         // TODO add your handling code here:
-        Integer cantidad = Integer.parseInt(etCantidad2.getText());
+        Integer cantidad = Integer.parseInt(campoCantidad2.getText());
         
         String resultado = String.valueOf(resta(cantidad));
        
-        etCantidad2.setText(resultado);
+        campoCantidad2.setText(resultado);
     }//GEN-LAST:event_btResta2ActionPerformed
 
     private void btResta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btResta3ActionPerformed
         // TODO add your handling code here:
-        Integer cantidad = Integer.parseInt(etCantidad3.getText());
+        Integer cantidad = Integer.parseInt(campoCantidad3.getText());
         
         String resultado = String.valueOf(resta(cantidad));
        
-        etCantidad3.setText(resultado);
+        campoCantidad3.setText(resultado);
     }//GEN-LAST:event_btResta3ActionPerformed
 
     private void btResta4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btResta4ActionPerformed
         // TODO add your handling code here:
-        Integer cantidad = Integer.parseInt(etCantidad4.getText());
+        Integer cantidad = Integer.parseInt(campoCantidad4.getText());
         
         String resultado = String.valueOf(resta(cantidad));
        
-        etCantidad4.setText(resultado);
+        campoCantidad4.setText(resultado);
     }//GEN-LAST:event_btResta4ActionPerformed
 
     private void btSuma2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSuma2ActionPerformed
         // TODO add your handling code here:
-        Integer cantidad = Integer.parseInt(etCantidad2.getText());
+        Integer cantidad = Integer.parseInt(campoCantidad2.getText());
         
         String resultado = String.valueOf(suma(cantidad));
        
-        etCantidad2.setText(resultado);
+        campoCantidad2.setText(resultado);
     }//GEN-LAST:event_btSuma2ActionPerformed
 
     private void btPagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPagarActionPerformed
         // TODO add your handling code here:
         
-        String cantidad1= etCantidad1.getText();
+        String cantidad1= campoCantidad1.getText();
         int c1 = Integer.parseInt(cantidad1);
-        String cantidad2= etCantidad2.getText();
+        String cantidad2= campoCantidad2.getText();
         int c2 = Integer.parseInt(cantidad2);
-        String cantidad3= etCantidad3.getText();
+        String cantidad3= campoCantidad3.getText();
         int c3 = Integer.parseInt(cantidad3);
-        String cantidad4= etCantidad4.getText();
+        String cantidad4= campoCantidad4.getText();
         int c4 = Integer.parseInt(cantidad4);
         
         if(c1==0 && c2==0 && c3==0 && c4==0){
@@ -341,34 +351,34 @@ public class Menu extends javax.swing.JFrame {
     
     private void btSuma1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSuma1ActionPerformed
         // TODO add your handling code here:
-        Integer cantidad = Integer.parseInt(etCantidad1.getText());
+        Integer cantidad = Integer.parseInt(campoCantidad1.getText());
         
         String resultado = String.valueOf(suma(cantidad));
        
-        etCantidad1.setText(resultado);
+        campoCantidad1.setText(resultado);
     }//GEN-LAST:event_btSuma1ActionPerformed
 
     private void btSuma3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSuma3ActionPerformed
         // TODO add your handling code here:
-        Integer cantidad = Integer.parseInt(etCantidad3.getText());
+        Integer cantidad = Integer.parseInt(campoCantidad3.getText());
         
         String resultado = String.valueOf(suma(cantidad));
        
-        etCantidad3.setText(resultado);
+        campoCantidad3.setText(resultado);
     }//GEN-LAST:event_btSuma3ActionPerformed
 
     private void btSuma4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSuma4ActionPerformed
         // TODO add your handling code here:
-        Integer cantidad = Integer.parseInt(etCantidad4.getText());
+        Integer cantidad = Integer.parseInt(campoCantidad4.getText());
         
         String resultado = String.valueOf(suma(cantidad));
        
-        etCantidad4.setText(resultado);
+        campoCantidad4.setText(resultado);
     }//GEN-LAST:event_btSuma4ActionPerformed
 
-    private void etCantidad1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_etCantidad1ActionPerformed
+    private void campoCantidad1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoCantidad1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_etCantidad1ActionPerformed
+    }//GEN-LAST:event_campoCantidad1ActionPerformed
 
     
     private void btCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCerrarSesionActionPerformed
@@ -379,11 +389,19 @@ public class Menu extends javax.swing.JFrame {
 
     private void btCleanVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCleanVentaActionPerformed
         // TODO add your handling code here:
-        etCantidad1.setText("0");
-        etCantidad2.setText("0");
-        etCantidad3.setText("0");
-        etCantidad4.setText("0");
+        campoCantidad1.setText("0");
+        campoCantidad2.setText("0");
+        campoCantidad3.setText("0");
+        campoCantidad4.setText("0");
     }//GEN-LAST:event_btCleanVentaActionPerformed
+
+    private void campoCantidad3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoCantidad3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoCantidad3ActionPerformed
+
+    private void campoCantidad4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoCantidad4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoCantidad4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -445,10 +463,10 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton btSuma3;
     private javax.swing.JButton btSuma4;
     private javax.swing.JLabel cMike;
-    private javax.swing.JTextField etCantidad1;
-    private javax.swing.JTextField etCantidad2;
-    private javax.swing.JTextField etCantidad3;
-    private javax.swing.JTextField etCantidad4;
+    private javax.swing.JTextField campoCantidad1;
+    private javax.swing.JTextField campoCantidad2;
+    private javax.swing.JTextField campoCantidad3;
+    private javax.swing.JTextField campoCantidad4;
     private javax.swing.JLabel fondo;
     private javax.swing.JLabel ivProducto1;
     private javax.swing.JLabel ivProducto2;
