@@ -106,7 +106,7 @@ public class Menu extends javax.swing.JFrame {
 
         precio3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         precio3.setForeground(new java.awt.Color(255, 255, 0));
-        precio3.setText("12.6€");
+        precio3.setText("12.60€");
         getContentPane().add(precio3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 290, -1, -1));
 
         precio4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
